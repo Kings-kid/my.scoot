@@ -24,12 +24,10 @@
   letter-spacing: -2.5px;
 }
 #mobility {
-  height: 445px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .mobility-text {
-  border: 1px solid blue;
   display: flex;
   padding: 235px 0px 0px 165px;
   flex-direction: column;
