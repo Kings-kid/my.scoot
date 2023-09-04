@@ -1,0 +1,355 @@
+
+#header-banner{
+    height: 200px;
+    background-image: url(../images/location-header.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gradient-overlay{
+    height: 100%;
+    background: rgba(49, 59, 89, 0.75);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 165px;
+}
+#gradient-overlay #arrow-three{
+    height: 62px;
+    width: 234px;
+}
+#gradient-overlay h1{
+    color: #FFFFFF;
+    font-family: 'Space Mono', monospace;
+    font-size: 56px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 56px;
+    letter-spacing: -2.5px; 
+}
+main{
+    margin-top: 0px;
+}
+.map{
+    height: 543px;
+    margin-top: 120px;
+    margin-left: 164px;
+    margin-right: 166px;
+    background-image: url(../images/map.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* margin-bottom: 112px; */
+    z-index: -1;
+}
+.map::before{
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+}
+.map #overlay{
+    height: 100%;
+}
+#overlay ul{
+    list-style: none;
+    position: relative;
+}
+#overlay ul .location{
+    height: 88px;
+    width: 189px;
+    background-image: url(../images/state-positions.svg);
+    background-position: center;
+    background-size: cover;
+    color: #495567;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 22px 39px 38px 38px;
+}
+#overlay ul li{
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    line-height: 28px;
+    color: #495567;
+    letter-spacing: -1.071px;
+}
+#overlay ul .location#loc-one{
+    margin-top: 71px;
+    margin-left: 147px;
+    position: absolute;
+}
+#overlay ul .location#loc-two{
+    margin-top: 18px;
+    margin-left: 393px;
+    position: absolute;
+}
+#overlay ul .location#loc-three{
+    margin-top: 78px;
+    margin-left: 896px;
+    position: absolute;
+}
+#overlay ul .location#loc-four{
+    margin-top: 251px;
+    margin-left: 779px;
+    position: absolute;
+}
+#mobile-list{
+    color: #FFFFFF;
+}
+#map-content{
+    height: 96px;
+    padding: 0px 165px 0px 164px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+#map-content h1{
+    color: #495567;
+    font-family: 'Space Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 351px;
+    letter-spacing: -2.143px;
+    font-style: normal;
+}
+#map-content p{
+    color: #939CAA;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 445px;
+    font-style: normal;
+    margin-right: 105px;
+}
+
+ @media screen and (min-width:769px) and (max-width:1440px){
+    html{
+        overflow-x: hidden;
+        width: 1440px;
+    }
+ }
+ @media screen and (min-width:376px) and (max-width:768px){
+    #gradient-overlay{
+        padding: 0px 0px 0px 97px;
+    }
+    .map{
+        margin-top: 144px;
+        margin-left: 39px;
+        margin-right: 40px;
+        height: 337px;
+        margin-bottom: 64px;
+    }
+    #overlay ul{
+        list-style: none;
+        position: relative;
+    }
+    #overlay ul .location{
+        height: 40px;
+        width: 120px;
+        background-image: url(../images/state-positions.svg);
+        background-position: center;
+        background-size: cover;
+        color: #495567;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 2px 30px 10px 30px;
+    }
+    #overlay ul li{
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: -0.58px;
+    }
+    #overlay ul .location#loc-one{
+        margin-top: 52px;
+        margin-left: 98px;
+        position: absolute;
+    }
+    #overlay ul .location#loc-two{
+        margin-top: 25px;
+        margin-left: 243px;
+        position: absolute;
+    }
+    #overlay ul .location#loc-three{
+        margin-top: 65px;
+        margin-left: 530px;
+        position: absolute;
+    }
+    #overlay ul .location#loc-four{
+        margin-top: 169px;
+        margin-left: 480px;
+        position: absolute;
+    }
+    #map-content{
+        height: 304px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    #map-content h1{
+        color: #495567;
+        font-family: 'Space Mono', monospace;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        width: 457px;
+        letter-spacing: -2.143px;
+        font-style: normal;
+        text-align: center;
+    }
+    #map-content p{
+        color: #939CAA;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        width: 573px;
+        font-style: normal;
+        text-align: center;
+    }
+ }
+ @media screen and (min-width:0px) and (max-width:375px){
+    #gradient-overlay{
+        height: 100%;
+        background: rgba(49, 59, 89, 0.75);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 32px 0px 32px;
+    }
+    #gradient-overlay #arrow-three{
+        height: 62px;
+        width: 234px;
+        display: none;
+    }
+    #gradient-overlay h1{
+        color: #FFFFFF;
+        font-family: 'Space Mono', monospace;
+        font-size: 40px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 40px;
+        letter-spacing: -1.786px; 
+    }
+    .map{
+        margin-top: 72px;
+        margin-left: 32px;
+        margin-right: 32px;
+        height: 152px;
+        margin-bottom: 40px;
+    }
+    #overlay ul{
+        list-style: none;
+        position: relative;
+    }
+    #overlay ul .location{
+        height: 16px;
+        width: 16px;
+        border-radius: 16px;
+        background-image: url(../images/oval.svg);
+        background-position: center;
+        background-size: cover;
+        color: transparent;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 0px;
+    }
+    #overlay ul li{
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: -0.58px;
+    }
+    #overlay ul .location#loc-one{
+        margin-top: 33px;
+        margin-left: 67px;
+        position: absolute;
+    }
+    #overlay ul .location#loc-two{
+        margin-top: 22px;
+        margin-left: 132px;
+        position: absolute;
+    }
+    #overlay ul .location#loc-three{
+        margin-top: 41px;
+        margin-left: 259px;
+        position: absolute;
+    }
+    #overlay ul .location#loc-four{
+        margin-top: 87px;
+        margin-left: 237px;
+        position: absolute;
+    }
+    #mobile-list ul{
+        display: flex;
+        padding: 0px 32px 72px 32px;
+        list-style: none;
+        flex-direction: column;
+        gap: 16px;
+    }
+    #mobile-list ul .list{
+        height: 72px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: rgba(252, 183, 43, 0.15);
+    }
+    #mobile-list ul li{
+        color: #495567;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.071px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+    }
+    #map-content{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 72px;
+        gap: 32px;
+ 
+    }
+    #map-content h1{
+        color: #495567;
+        font-family: 'Space Mono', monospace;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        width: 311px;
+        letter-spacing: -2.143px;
+        font-style: normal;
+        text-align: center;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    #map-content p{
+        color: #939CAA;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        width: 311px;
+        height: 125px;
+        font-style: normal;
+        text-align: center;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+ }
